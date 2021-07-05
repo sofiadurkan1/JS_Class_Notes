@@ -1,4 +1,4 @@
-let bests = ["Clarusway","Google","Tesla","Amazon",555,777];
+// let bests = ["Clarusway","Google","Tesla","Amazon",555,777];
 // console.log(bests);
 // console.log(bests[1]);
 // console.log(bests[bests.length-1]);
@@ -60,11 +60,11 @@ let bests = ["Clarusway","Google","Tesla","Amazon",555,777];
 // console.log("poppedElement",poppedEl);
 
 //SHIFT  UNSHIFT
-const names = ['John', 'James', 'Walter', 'Edward'];
-console.log(names.shift()); //first element deletes.
+// const names = ['John', 'James', 'Walter', 'Edward'];
+// console.log(names.shift()); //first element deletes.
 
-let shiftedEl = names.shift();
-console.log(shiftedEL);
+// let shiftedEl = names.shift();
+// console.log(shiftedEL);
 
 
 
