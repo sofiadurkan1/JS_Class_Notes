@@ -100,21 +100,45 @@ const lessonList = [
 // mdn.innerHTML = 'W3 School'
 
 
-const insElm = document.querySelectorAll('#instructors li');
-// console.log(insElm);
-insElm.forEach((item) => {
-    console.log(item.innerText.includes('FrontEnd'));
-    if(item.innerText.includes('FrontEnd')){
-        item.setAttribute("class","front-end");
+// const insElm = document.querySelectorAll('#instructors li');
+// // console.log(insElm);
+// insElm.forEach((item) => {
+//     console.log(item.innerText.includes('FrontEnd'));
+//     if(item.innerText.includes('FrontEnd')){
+//         item.setAttribute("class","front-end");
 
-    }else if(item.innerText.includes('BackEnd')){
-        item.setAttribute("class","back-end")
+//     }else if(item.innerText.includes('BackEnd')){
+//         item.setAttribute("class","back-end")
 
-    }else if(item.innerText.includes('Team Lead')){
-        item.setAttribute("class","lead")
+//     }else if(item.innerText.includes('Team Lead')){
+//         item.setAttribute("class","lead")
 
-    }
+//     }
 
 
     
-})
+// })
+
+
+// const jsPrg = document.querySelector('#js-prg');
+// // console.log(jsPrg);
+// jsPrg.style.color = "green";
+// jsPrg.style.backgroundColor = 'red';
+// jsPrg.style.fontSize = '1rem';
+// jsPrg.style.margin = '10px';
+
+// const cwBanners = document.getElementById('cw-banner');
+// // console.log(cwBanners);
+// console.log(cwBanners.classList);
+// cwBanners.classList.add('imp');
+// cwBanners.classList.remove('banner')
+
+
+// const cwQuote = document.querySelector('quote-div');
+// // console.log(cwQuote);
+
+
+// cwElm = document.createElement('h2');
+// // console.log(cwElm);
+// cwElm.innerText ="Clarusway";
+// cwQuote.appendChild(cwElm);
