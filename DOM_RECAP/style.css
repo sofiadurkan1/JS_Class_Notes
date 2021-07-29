@@ -1,0 +1,21 @@
+.success {
+    color: green;
+    font-weight: bold;
+}
+.error {
+    color: red;
+}
+.hello{
+    color:blueviolet;
+    font-size: 3rem;
+
+}
+
+.bannerText{
+    font-size:3rem;
+    font-weight: bold;
+}
+
+.active{
+    color:blue;
+}

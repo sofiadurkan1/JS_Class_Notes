@@ -109,10 +109,113 @@
 
 //--------------------------------------------------
 
-const element = document.querySelector("#link");
-console.log(element);
-const attr = element.getAttribute("href");
-console.log(attr);
-// console.log(element.href); // this is also valid but not recomanded.
-element.setAttribute("href", "http://www.clarusway.com");
-element.innerText = "Go to ClarusWay"
+// const element = document.querySelector("#link");
+// console.log(element);
+// const attr = element.getAttribute("href");
+// console.log(attr);
+// // // console.log(element.href); // this is also valid but not recomanded.
+// element.setAttribute("href", "http://www.clarusway.com");
+// element.innerText = "Go to ClarusWay"
+
+
+//--------------------------------------
+
+
+// const elementsLI = document.querySelectorAll("li");
+// console.log(elementsLI);
+
+// // elementsLI.forEach(item =>console.log(item));
+// // elementsLI.forEach(item =>console.log(item.innerHTML));
+
+
+// elementsLI.forEach(item =>{
+    
+//     console.log(item.innerHTML);//we checked it item has "error" and changed the color of class
+
+
+//     if(item.innerHTML.includes("error")){
+//         item.setAttribute("class","error")
+        
+//     }
+
+//     if(item.innerHTML.includes("success")){
+//         item.setAttribute("class","success")
+        
+//     }
+// });
+
+
+//---------------------------------------------------
+
+
+
+// const myElement = document.querySelector(".hello");
+// // console.log(myElement);
+
+// myElement.style.color = 'red';
+// myElement.style.fontWeight = 'red';
+// myElement.style.border = '2px solid red';
+
+
+
+//--------------------------------------------
+
+
+// // const myBanner = document.getElementById("myBanner");
+// const myBanner = document.querySelector("#myBanner");
+
+
+// // console.log(myBanner.classList);
+// // console.log(typeof myBanner.classList);
+// myBanner.classList.add("active")
+// console.log(myBanner);
+
+
+//------------------------------------------------
+
+// const element = document.querySelector("#today");
+// console.log(element);
+
+// const elementP  = document.createElement("p");
+// console.log(elementP);
+
+// elementP.innerText = "Wednesday";
+// console.log(elementP);
+
+// element.appendChild(elementP)
+
+
+//---------------------------------
+
+
+const element = document.querySelector("#btn");
+// console.log(element);
+
+element.addEventListener("click", clickFunction);//most readebale method..
+
+function clickFunction(){
+    console.log("you clicked me!")
+    document.querySelector("#para").innerHTML = "change the text.."//we changed the text
+}
+
+
+
+
+element.addEventListener("mouseover", function(){
+    console.log("mouseover")
+
+});
+
+
+
+element.addEventListener("mouseenter", () =>console.log("arrow function"));
+
+
+document.querySelector("#para").addEventListener("click",function(){
+    alert("give me a alert!");
+    element.removeEventListener("click",clickFunction);
+
+   
+
+});
+
