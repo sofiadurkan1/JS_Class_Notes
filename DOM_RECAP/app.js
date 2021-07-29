@@ -91,19 +91,28 @@
 
 //-------------------------------------------
 
-const car_list = [
-    { id:0, brandName: "Mercedes"},
-    { id:1, brandName: "BMW"},
-    { id:2, brandName: "Toyota"},
-    { id:3, brandName: "Opel"},
-];
+// const car_list = [
+//     { id:0, brandName: "Mercedes"},
+//     { id:1, brandName: "BMW"},
+//     { id:2, brandName: "Toyota"},
+//     { id:3, brandName: "Opel"},
+// ];
 
 
-const comboBox =document.createElement("select");
+// const comboBox =document.createElement("select");
 
-car_list.forEach(car =>{
-    comboBox.innerHTML +=`<option value="${car.id}">${car.brandName}</option>`
-})
+// car_list.forEach(car =>{
+//     comboBox.innerHTML +=`<option value="${car.id}">${car.brandName}</option>`
+// })
 
-document.body.append(comboBox);
+// document.body.append(comboBox);
 
+//--------------------------------------------------
+
+const element = document.querySelector("#link");
+console.log(element);
+const attr = element.getAttribute("href");
+console.log(attr);
+// console.log(element.href); // this is also valid but not recomanded.
+element.setAttribute("href", "http://www.clarusway.com");
+element.innerText = "Go to ClarusWay"
